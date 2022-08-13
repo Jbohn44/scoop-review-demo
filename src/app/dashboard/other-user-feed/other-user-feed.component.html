@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <div class="section-header">
+        <h5 class="section-heading">What Other Users Are Scooping</h5>
+    </div>
+    <div class="feed-box">
+
+        <div *ngFor="let review of this.reviewArray" class="review-box">
+            <div class="review-box-header">
+                <div class="review-header-item">{{review.ReviewDate | date:'shortDate'}}</div>
+            </div>
+            <div class="review-box-body">
+                <div class="review-box-item">
+                    <h3 class="section-heading">{{review.FlavorName}}</h3>
+                </div>
+                <div class="review-box-item">{{review.Business}}</div>
+                <div class="review-box-item">
+                    <div class="rating-container">
+                        Over All Rating: <rating class="star-rating" [(ngModel)]="review.OverAllRating.RatingValue"
+                            [max]="5" [readonly]="true"></rating>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.nav-link{
+    /* color: var(--main-purple-200) !important; */
+    color: white !important;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+}
+.nav-item:hover{
+    cursor: pointer;
+}
+
+.navbar-brand{
+    /* border: 5px solid white; */
+    /* border-radius: 100%; */
+    padding: 0.5%;
+    color: white;
+    /* width: 4rem; */
+    /* height: 4rem; */
+    font-size: 2rem;
+}
+.navbar-brand:hover{
+    color: var(--main-blue-300);
+}
+.navbar{
+    background-color: var(--main-purple-200) !important;
+    padding-left: 2%;
+    padding-right: 7%;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+.dropdown-item{
+    color: var(--main-blue-300) !important;
+}
+

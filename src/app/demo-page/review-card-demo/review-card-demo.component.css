@@ -1,0 +1,58 @@
+.card{
+    padding: .5rem;
+    /* border: 30px solid var(--main-purple-300); */
+}
+
+
+.text-card-format {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.card-btn:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.service-pill{
+    padding: .25rem;
+    border-radius: .75rem;
+    background-color: var(--main-purple-300);
+    margin: 1%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+}
+
+
+
+.delete-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: var(--main-purple);
+}
+
+.loading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-flex-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer{
+    height: 3rem;
+}

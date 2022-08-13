@@ -1,0 +1,6 @@
+.category-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 10rem;
+}

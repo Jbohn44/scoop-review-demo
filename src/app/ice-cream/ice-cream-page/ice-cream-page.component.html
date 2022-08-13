@@ -1,0 +1,14 @@
+<div class="page-wrapper">
+
+    <div class="outer-ice-cream-tile-container">
+        <div class="section-header">
+            <h3 class="section-heading">Reviews</h3>
+        </div>
+        <div class="ice-cream-tile-container">
+            <div *ngFor="let iceCream of this.iceCreams">
+                <app-ice-cream-tile [iceCream]="iceCream"></app-ice-cream-tile>
+            </div>
+        </div>
+    </div>
+
+</div>

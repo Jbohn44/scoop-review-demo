@@ -1,0 +1,37 @@
+
+    <div class="demo-header">
+        <h1>Welcome To The Scoop Review Demo Page!</h1>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="dashboard-section medium-container">
+            <app-user-feed-demo></app-user-feed-demo>
+        </div>
+        <div class="dashboard-section medium-container">
+            <app-category-manager-demo></app-category-manager-demo>
+        </div>
+        <div class="dashboard-section medium-container">
+            <app-activity-feed-demo></app-activity-feed-demo>
+        </div>
+    </div>
+    <div class="demo-controls">
+        <div class="button-container">
+            <p>Add A Scoop!</p>
+            <button type="button" class="button-custom button-dark" (click)="addReview(addtemplate)">Add</button>
+        </div>
+    </div>
+    <footer>
+        <p>Joe Bohnert 2022</p>
+    </footer>
+
+    <ng-template #addtemplate>
+        <div class='modal-header'>
+          <h4>Add A Scoop</h4>
+          <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+            <span aria-hidden="true" class="visually-hidden">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <app-review-add-demo [edit]="false"></app-review-add-demo>
+        </div>
+      </ng-template>

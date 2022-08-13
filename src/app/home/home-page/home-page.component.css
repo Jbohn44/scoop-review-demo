@@ -1,0 +1,181 @@
+.head-div{
+    height: 30rem;
+    width: 100%;
+    background-color: var(--main-purple-300);
+}
+.content-div{
+    position: relative;
+    height: 30rem;
+    width: 100%;
+    background-color: var(--main-blue-300);
+}
+.head-text-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem;
+}
+
+.sign-in-container{
+    position: absolute;
+    top: -10rem;
+    left: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    height: 20rem;
+    width: max(33%, 20rem);
+    z-index: 9999;
+}
+
+h1{
+    color: var(--main-blue-300);
+    /* background-image: var(--text-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-size: 10rem;
+    z-index: 9999;
+}
+p{
+    font-weight: bolder;
+    color: white;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+}
+.circle-one{
+    top: 10%;
+    left: 90%;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--main-blue-300);
+
+    
+}
+.circle-two{
+    top: 50%;
+    left: 78%;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--main-blue-300);
+
+
+}
+
+.circle-three{
+    top: 20%;
+    left: 60%;
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--main-blue-300);
+
+}
+.circle-four{
+    top: 90%;
+    right: 90%;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--main-purple-300);
+    
+}
+.circle-five{
+    top: 45%;
+    right: 78%;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--main-purple-300);
+
+
+}
+
+.circle-six{
+    top: 95%;
+    right: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--main-purple-300);
+
+}
+.bordered-graphic{
+    top: 10%;
+    left: 65%;
+    position: absolute;
+    height: 15rem;
+    width: 20rem;
+    border-right: 1rem dotted var(--main-blue-300);
+    border-top: 1rem dotted var(--main-blue-300);
+}
+.bordered-graphic-two{
+    top: 90%;
+    left: 20%;
+    position: absolute;
+    height: 15rem;
+    width: 20rem;
+    border-bottom: 1rem dotted var(--main-purple-300);
+    border-left: 1rem dotted var(--main-purple-300);
+
+}
+/*
+Media Queries
+*/
+
+@media screen and (max-width: 1240px){
+ .sign-in-container{
+     position: relative;
+     top: 1rem;
+     left:auto;
+     width: 90%;
+
+ }
+ .head-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    width: 100%;
+    background-color: var(--main-purple-300);
+}
+.content-div{
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    width: 100%;
+    background-color: var(--main-blue-300);
+}
+.head-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+}
+@media screen and (max-width: 1250px) {
+
+    .circle{
+        display: none;
+    }
+}
+@media screen and (max-width: 650px) {
+    h1{
+        font-size: calc(50vw / 2);
+    }
+
+}
+
+
+
+
+
+
+
+
+

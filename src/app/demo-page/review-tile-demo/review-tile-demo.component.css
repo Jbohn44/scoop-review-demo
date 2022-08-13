@@ -1,0 +1,44 @@
+
+.tile-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: .25rem solid var(--main-blue-300);
+}
+.tile-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: .25rem;
+}
+.tile-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: .5rem;
+  border: .25rem solid var(--main-blue-300);
+  border-radius: .5rem;
+  color: var(--main-blue-300);
+  width: 10rem;
+  height: 13rem;
+  text-align: center;
+}
+
+
+
+.review-link{
+  color: white;
+  background-color: var(--main-blue-300);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: .25rem;
+  box-shadow: 2px 2px 0px var(--main-purple-200);
+}
+
+.review-link:hover{
+  cursor: pointer;
+}
+

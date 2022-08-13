@@ -1,0 +1,36 @@
+.dashboard-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add-container{
+    position: sticky;
+    bottom: 1rem;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.dashboard-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5rem;
+}
+
+.medium-container{
+    width: 33.33%;
+}
+.stats-container{
+    width: 100%
+}
+
+
+
+@media  screen and (max-width: 1024px) {
+    .medium-container{
+        width: 100%;
+    }
+}
+

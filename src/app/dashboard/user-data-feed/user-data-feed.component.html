@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div class="section-header">
+        <h5 class="section-heading">Your Latest Scoops</h5>
+    </div>
+    <div class="tile-display-outer">
+        <div class="tile-display-inner">
+            <div *ngFor="let iceCream of this.iceCreams">
+                <app-ice-cream-tile [iceCream]="iceCream"></app-ice-cream-tile>
+            </div>
+            <div [routerLink]="['./icecream']" class="go-to-all">
+                Go To All Reviews >>
+            </div>
+        </div>
+    </div>
+</div>

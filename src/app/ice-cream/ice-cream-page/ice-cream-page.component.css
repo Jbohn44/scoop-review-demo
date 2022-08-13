@@ -1,0 +1,42 @@
+.page-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-blue-200);
+}
+.outer-ice-cream-tile-container{
+    margin-top: 2rem;
+    width: 70%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.header-container{
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.ice-cream-tile-container{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .ice-cream-tile-container{
+        width: 100%;
+        height: 100%;
+    }
+    .outer-ice-cream-tile-container{
+        width: 100%;
+    }
+}
+
+
+

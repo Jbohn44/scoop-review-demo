@@ -1,0 +1,254 @@
+/*
+    GLOBAL STYLES 
+*/
+
+@font-face {
+    font-family: 'luckiest_guyregular';
+    src: url('assets/fonts/luckiestguy/luckiestguy-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/luckiestguy/luckiestguy-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    
+
+   
+    --main-purple-100: hsl(274, 77%, 80%);
+    --main-purple-200: hsl(274, 77%, 60%);
+    --main-purple-300: hsl(274, 77%, 38%);
+    --main-purple-400: hsl(274, 77%, 20%);
+    --main-purple-500: hsl(274, 77%, 10%);
+
+    --main-orange-100: hsl(26, 100%, 80%);
+    --main-orange-200: hsl(26, 100%, 60%);
+    --main-orange-300: hsl(26, 100%, 50%);
+    --main-orange-400: hsl(26, 100%, 30%);
+    --main-orange-500: hsl(26, 100%, 20%);
+
+    --main-blue-50: hsl(196, 100%, 90%);
+    --main-blue-100: hsl(196, 100%, 80%);
+    --main-blue-200: hsl(196, 100%, 60%);
+    --main-blue-300: #00bbff;
+    --main-blue-400: hsl(196, 100%, 30%);
+    --main-blue-500: hsl(196, 100%, 20%);
+
+    --main-black-100: hsl(0, 0%, 10%);
+    --main-black-200: hsl(0, 0%, 5%);
+    --main-black-300: hsl(0, 0%, 0%);
+
+    --main-grey-100: hsl(0, 0%, 95%);
+    --main-grey-200: hsl(0, 0%, 60%);
+    --main-grey-300: hsl(0, 0%, 50%);
+    --main-grey-400: hsl(0, 0%, 40%);
+    --main-grey-500: hsl(0, 0%, 30%);
+
+    /*
+        gradients
+    */
+
+    --card-gradient: linear-gradient(60deg, var(--main-purple-200), var(--main-blue-300));
+    --text-gradient: linear-gradient(90deg, var(--main-purple-300), var(--main-purple-200));
+    --footer-gradient: linear-gradient(white, hsl(274, 88%, 39%));
+
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+/*
+    CUSTOM BUTTONS
+*/
+.button-custom {
+    border-radius: .25rem;
+    padding: .5rem;
+    min-width: 5rem;
+    border: none;
+    font-weight: bold;
+}
+
+.button-custom:hover {
+    cursor: pointer;
+}
+.button-round-small {
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+}
+.button-round-small:focus {
+    outline: 3px solid var(--main-blue-300);
+}
+.button-light {
+    background-color: var(--main-orange-200);
+    color: white
+}
+
+.button-dark {
+    background-color: var(--main-purple-200);
+    color: white;
+}
+
+.button-medium {
+    background-color: var(--main-blue-300);
+}
+
+
+/*
+    Headers, Paragraphs - global styles
+*/
+.star-rating{
+    color: var(--main-orange-300);
+    font-size: 18px;
+}
+
+.flex-container-space{
+    display: flex;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'luckiest_guyregular', Arial, sans-serif;
+    color: var(--main-blue-300);
+}
+.section-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .5rem;
+    background-image: var(--card-gradient);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height: 3rem;
+  }
+
+  .section-heading {
+      padding: 0;
+      margin: 0;
+      color: white;
+  }
+
+  .legend-heading{
+      padding: 0;
+      margin: 0;
+  }
+
+
+/*
+    Scroll Bar Styling
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: .5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--main-blue-100); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-purple-200);
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-orange-200);
+    cursor: pointer;
+  }
+
+  /* end of scroll bar styling*/
+
+
+  .graphics-container{
+    width: 100px;
+    height: 100px;
+    align-self: flex-start;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.graphics{
+    border-radius: 5%;
+    position: absolute;
+    background: var(--main-purple-300);
+    height: 50px;
+    width: 50px;
+    box-shadow: -20px -20px 0 0 var(--main-orange-300);
+}
+
+.feed-controls{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+  }
+
+  .navbar > * {
+    font-family: 'luckiest_guyregular', Arial, sans-serif;
+  }
+
+  /*
+    Custom Form Styles
+  */
+  input{
+    width: 100%;
+    border-radius: .5rem;
+    padding: .5rem;
+    border: 1px solid lightgray;
+    color: var(--main-blue-400);
+}
+label{
+    margin: 0;
+    color: var(--main-blue-300);
+}
+input[type=text]:focus{
+    background-color: var(--main-blue-50);
+    outline: 3px solid var(--main-blue-300);
+}
+
+input[type=submit]{
+    background-color: var(--main-blue-300);
+    color: white;
+}
+textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+    color: var(--main-blue-400);
+}
+textarea:focus{
+    background-color: var(--main-blue-50);
+    outline: 3px solid var(--main-blue-300);
+}
+
+fieldset{
+    padding: .5rem;
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+    border: 2px solid var(--main-blue-300);
+    border-radius: .5rem;
+  }
+
+  legend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    margin-left: 1rem;
+    width: auto;
+    border: 2px solid var(--main-blue-300);
+    border-radius: .5rem;
+    background-color: white;
+  }

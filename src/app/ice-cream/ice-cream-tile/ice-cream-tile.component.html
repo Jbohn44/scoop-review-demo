@@ -1,0 +1,30 @@
+<!-- <div class="info-tile" (click)="openIceCream(icecreamtemplate)">
+  <div class="tile-header">
+    {{this.iceCream.FlavorName}}:
+    {{this.iceCream.ReviewDate| date: 'shortDate'}}
+  </div>
+  <div class="elipse elipse-one"></div>
+  <div class="elipse elipse-two"></div>
+  <div class="elipse elipse-three"></div>
+</div> -->
+<div class="tile-container">
+  <div class="tile-header">
+    <object data="../../../assets/images/svg/ice_cream_outline_design.svg" width="80" height="80"> </object>
+  </div>
+  <div class="tile-info" (click)="openIceCream(icecreamtemplate)">
+    {{this.iceCream.FlavorName}}:
+    {{this.iceCream.ReviewDate| date: 'shortDate'}}
+  </div>
+</div>
+
+<ng-template #icecreamtemplate>
+  <div class='modal-header'>
+    <h4>Ice Cream</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="iceCreamModalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-ice-cream-card [iceCream]="this.iceCream"></app-ice-cream-card>
+  </div>
+</ng-template>

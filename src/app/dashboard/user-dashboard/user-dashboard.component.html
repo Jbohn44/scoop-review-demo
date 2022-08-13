@@ -1,0 +1,14 @@
+<div class="dashboard-container">
+    <div class="dashboard-section medium-container">
+        <app-user-data-feed [user]="this.user"></app-user-data-feed>
+    </div>
+    <div class="dashboard-section medium-container">
+        <app-other-user-feed [userId]="this.user.UserId"></app-other-user-feed>
+    </div>
+    <div class="dashboard-section medium-container">
+        <app-category-manager [userId]="this.user.UserId"></app-category-manager>
+    </div>
+    <div class="stats-container dashboard-section">
+        <app-user-stats></app-user-stats>
+    </div>
+</div>

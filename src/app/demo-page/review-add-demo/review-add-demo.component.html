@@ -1,0 +1,110 @@
+<div class="ice-cream-form">
+    <form (ngSubmit)="onSubmit()" #iceCreamForm="ngForm">
+        <fieldset>
+            <legend>
+                <h6 class="legend-heading">General</h6>
+            </legend>
+            <div class="form-flex-container">
+                <div class="form-flex-item">
+                    <label for="dateReviewed">
+                        Date Reviewed
+                    </label>
+                    <input type="text" placeholder="Click To Enter" class="" bsDatepicker id="dateReviewed"
+                        name="dateReviewed" placement="bottom" [(ngModel)]="this.iceCream.ReviewDate" name="ReviewDate"
+                        [bsConfig]="{ isAnimated: true }">
+                </div>
+                <div class="form-flex-item">
+                    <label for="flavor">
+                        Flavor
+                    </label>
+                    <input type="text" id="flavor" class="" required [(ngModel)]="this.iceCream.FlavorName"
+                        name="flavor">
+                </div>
+                <div class="form-flex-item">
+                    <label for="business">
+                        Business
+                    </label>
+                    <input type="text" id="business" class="" required [(ngModel)]="this.iceCream.Business"
+                        name="business">
+                </div>
+                <div class="form-flex-item">
+                    <label for="location">
+                        Location
+                    </label>
+                    <input type="text" id="location" class="" required [(ngModel)]="this.iceCream.Location"
+                        name="location">
+                </div>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h6 class="legend-heading">Ratings</h6>
+            </legend>
+            <div class="form-flex-rating-container">
+                <div *ngFor="let rating of ratingList" class="rating-container">
+                    <div class="rating-container-header">
+                        {{rating.RatingName}}:
+                    </div>
+                    <input type="range" min="0" max="5" id="{{rating.RatingName}}" name="{{rating.RatingName}}"
+                        [(ngModel)]="this.iceCream[rating.RatingType].RatingValue" class="slide-rating" />
+                    {{this.iceCream[rating.RatingType].RatingValue}}
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h6 class="legend-heading">Comments</h6>
+            </legend>
+            <div class="comment-container">
+
+                <textarea type="textarea" id="comments" class="comment-text" cols="75" rows="5"
+                    [(ngModel)]="this.iceCream.Comments" name="comments" placeholder="add comments here..."></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h6 class="legend-heading">Services</h6>
+            </legend>
+            <div class="check-box-container">
+                <div *ngFor="let service of this.serviceList" class="">
+                    <input class="" type="checkbox" id="{{service.ServiceName}}" value="{{service.ServiceTypeId}}"
+                        name="{{service.ServiceName}}" (click)="handleService($event, service)">
+                    <label class="" for="{{service.ServiceName}}">{{service.ServiceName}}
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h6 class="legend-heading">Categories</h6>
+            </legend>
+            <div class="check-box-container">
+                <div *ngFor="let category of this.categoryList" class="check-box-item">
+                    <input class="" type="checkbox" id="{{category.CategoryName}}" value="{{category.CategoryId}}"
+                        name="{{category.CategoryName}}" [(ngModel)]="this.iceCream.Categories">
+                    <label class="" for="{{category.CategoryName}}">{{category.CategoryName}}
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <div class="debugger">
+            {{this.iceCream | json}}
+        </div>
+
+        <div *ngIf="this.edit === false" class="btn-container">
+            <button *ngIf="this.submitting === false" type="submit" class="button-custom button-dark"
+                [disabled]="!iceCreamForm.form.valid">Submit</button>
+            <div *ngIf="this.submitting === true" class="submittal">submitting...</div>
+        </div>
+    </form>
+    <div *ngIf="this.edit === true" class="btn-container">
+        <button type="submit" class="button-custom button-dark" [disabled]="!iceCreamForm.form.valid"
+            (click)="onSave()">Save</button>
+        <button class="button-custom button-light" (click)="onDelete($event)">Delete</button>
+    </div>
+    <div class="footer"></div>
+
+</div>

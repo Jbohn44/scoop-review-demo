@@ -1,0 +1,182 @@
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #5c5c5d; /* red */
+  }
+  .btn-custom{
+    margin: 1%;
+  }
+
+.pill-label {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  align-self: center;
+}
+
+.delete{
+  align-self: flex-end;
+  order: -1;
+}
+.delete:hover{
+  cursor: pointer;
+}
+.d-picker{
+  z-index: 9999 !important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.hov-tool:hover{
+  color: green;
+}
+
+.star-rating{
+  font-size: 25px;
+  color: var(--main-orange-300);
+}
+
+.btn-container{
+  padding: 2rem;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-flex-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.form-flex-item{
+  width: 40%;
+  margin: .5rem;
+}
+.form-flex-rating-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+  .form-flex-rating-container{
+    width: 100%;
+  }
+  .form-flex-item{
+    width: 80%;
+  }
+  .rating-container{
+    width: 100%;
+  }
+
+}
+.comment-container{
+  display: flex;
+}
+.comment-text{
+  width: 100%;
+  border-radius: .5rem;
+}
+.rating-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: .25rem;
+}
+.rating-container-header{
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--main-purple-300);
+}
+
+.ice-cream-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: .25rem; */
+}
+
+.check-box-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.check-box-item {
+  margin: .5rem;
+}
+/* The slider itself */
+.slide-rating {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 1rem; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slide-rating:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slide-rating::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: var(--main-purple-300); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: .25rem;
+}
+
+.slide-rating::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: var(--main-purple-300); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: .25rem;
+
+}
+
+.footer{
+  height: 3rem;
+}
+
+.submittal{
+  font-size: .75rem;
+}
+
+.comment-text{
+  border: none;
+}

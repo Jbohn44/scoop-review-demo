@@ -1,0 +1,11 @@
+<form #categoryForm="ngForm" (ngSubmit)="this.onSubmit()" class="category-form">
+    <label for="category-name">
+    Enter Category
+    <input type="text" id="category-name" name="category-name" [(ngModel)]="this.category.CategoryName" #categoryName />
+    </label>
+    <input type="submit" (submit)="this.onSubmit()" />
+    <button class="button-custom" (click)="this.cancelForm()">Cancel</button>
+</form>
+
+
+

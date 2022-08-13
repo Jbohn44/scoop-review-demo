@@ -1,0 +1,14 @@
+.wrapper{
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: white;
+    min-height: 325px;
+}
+
+.category-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    padding: 1rem;
+}

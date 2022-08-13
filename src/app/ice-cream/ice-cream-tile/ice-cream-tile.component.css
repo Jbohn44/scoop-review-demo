@@ -1,0 +1,36 @@
+
+.tile-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: .25rem solid var(--main-blue-300);
+}
+.tile-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.tile-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: .5rem;
+    border: .25rem solid var(--main-blue-300);
+    border-radius: .5rem;
+    color: var(--main-blue-300);
+    width: 10rem;
+    height: 13rem;
+    text-align: center;
+}
+
+.tile-container:hover{
+    cursor: pointer;
+}
+
+.scoop:hover{
+    cursor: pointer;
+}
+

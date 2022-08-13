@@ -1,0 +1,22 @@
+.add-button{
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 5rem;
+    background-color: var(--main-purple-200);
+    box-shadow: 2px 2px 3px black;
+    font-weight: bold;
+    border-radius: 100%;
+    color: white;
+    z-index: 9999;
+    text-align: center;
+    transition: 1s;
+}
+
+.add-button:hover{
+    cursor: pointer;
+    background-color: var(--main-blue-200);
+}
