@@ -11,5 +11,5 @@ Demo Code For Scoop Review - An Angular Web Application
 
 ### Technologies
 * Angular (8)
-* 
-* 
+* CSS Flexbox
+* Ngx-bootstrap (for modals)
